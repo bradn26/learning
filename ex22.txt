@@ -1,0 +1,34 @@
+print : this will print a text string that follows it.
+"" : need to put this around a string
+'' : can also use this if you want to use "" in between ''
+# : Anything following octothorp will be "commented out"
++ : plus
+- : minus
+/ : divides
+% : divides with remainder
+< : less-than
+> : greater than
+<= : less-than-equal
+=> : greater-than-equal
+= : the equals sign is used to assign variables. example : cars = 100 or cars_not_driven = cars - drivers
+%d : format character for numbers
+%r : format character for anything (converts to strings)
+%.2f : converts to two decimal floating point
+%s : format character for strings
+% : this converts things after it when using format characters
+variables can be strings, example: hilarious = False
+\n : escape character for a new line
+""" : can start and end multi-line printing
+''' : can start and end multi-line printing
+\t : escape character for tabbing in 
+raw_input() : allows user to input data/information
+\ : used to format special characters example: '6\'2"'
+from sys import ___ : brings in a function to the command line
+script, ____ = argv : following this will call files etc
+open() : opens a file
+.read() : reads a file
+close() : closes a file
+truncate() : empties the file * use with caution
+output.close() : closes the output file
+input.close() : closes the input file
+def : defines functions
