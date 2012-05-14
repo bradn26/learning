@@ -23,4 +23,4 @@ else:
 	
 # else is a conditional statement if -> then 'do this' else(otherwise) -> 'do that'
 
-# elif combines the else & if functions?
+# elif allows functions with more than 2 options
