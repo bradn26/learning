@@ -1,0 +1,34 @@
+Keywords
+------------
+and : combines things, logical & operator, if both are true, becomes true
+
+del : this is a way to remove an item from a list given index instead of the value
+
+from : imports modules 'from' other areas of python libraries
+
+not : uses to reverse the logical state of the operation. If a condition is true, then logical not will make it false
+
+while : creates a loop that will continue to run until it becomes false
+
+as : 
+
+elif : allows for more than 2 options in a for-loop
+
+global : declaration which holds true for an entire current code block
+
+or : logical operator, if any two operands are non zero, then the condition becomes true
+
+with : allows for multiple statements to be brought together
+
+assert : allows debugging to be built in to code
+
+else : breaks off an option in a for-loop
+
+if : this is pretty easy to figure out
+
+pass : null operation used as a placeholder, doesn't execute code
+
+yield : used when defining a generator function
+
+break : terminates a loop and skips the else if the loop has one
+

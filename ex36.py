@@ -1,6 +1,6 @@
 from sys import exit
 
-# Show this code to Jack... confused about why things are coming back as undefined.
+
 
 def start():
 	print "You wake up in the morning and it is sunny out"
@@ -85,13 +85,13 @@ def biking():
 		print "You could taunt it, or run away... Decisions, decisions..."
 	else:
 		print "Get with it, let's try that again."
+	while next != "taunt" and next != "run":
+		next = raw_input("> ")
 		
-	raw_input(">")
-		
-	if next == "taunt": # something goes wrong here
-		print "Crazy enough to work, the mountain lion ran away!"
-		print "You'll have a story to tell about that one!"
-	elif next == "run": # something goes wrong here too
+		if next == "taunt": # something goes wrong here
+			print "Crazy enough to work, the mountain lion ran away!"
+			print "You'll have a story to tell about that one!"
+		elif next == "run": # something goes wrong here too
 			print "Unfortunately, you've scared the mountain lion, and now he is chasing you"
 			print "You can go 'left' or 'right'!"
 			
@@ -101,10 +101,10 @@ def biking():
 				print bloody
 			elif next == "right":
 				print "You escaped. Congratulations!"
-				
-	else:
-		print "You need to pay better attention!"
-		print "Let's try that again."
+		while next != "left" and next != "right":		
+			next = raw_input("> ")	
+			print "You need to pay better attention!"
+			print "Let's try that again."
 		
 
 def baseball():
