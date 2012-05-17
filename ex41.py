@@ -68,7 +68,8 @@ def laser_weapon_armory():
 	code = "%d%d%d" % (randint(1,9), randint(1,9), randint(1,9))
 	guess = raw_input("[keypad]> ")
 	guesses = 1
-	cheat_code = "267"
+	cheat_code = 267
+	guess = int(guess)
 	
 	while (guess != code and guess != cheat_code) and guesses < 10:
 		if guess > code:
@@ -145,13 +146,6 @@ def escape_pod():
 		print "implodes as the hull ruptures, crushing your body"
 		print "into jam jelly."
 		return 'death'
-	elif int(guess) == cheat_code:
-		print "You jump into pod %s and hit the eject button." % cheat_code
-		print "The pod easily slides out into space heading to"
-		print "the planet below.  As it flies into the planet, you look"
-		print "back and see your ship implode then explode like a"
-		print "bright star, taking out the Gothon ship at the same"
-		print "time.  You won!"
 	else:
 		print "You jump into pod %s and hit the eject button." % guess
 		print "The pod easily slides out into space heading to"
@@ -173,10 +167,11 @@ ROOMS = {
 
 def runner(map, start):
 	next = start
+	print start
 	
 	while True:
-		room = map[next]
+		room = map[next] # issue here
 		print "\n--------"
 		next = room()
 		
-runner(ROOMS, 'central_corridor')
+runner(ROOMS, 'central_corridor') # Error here
