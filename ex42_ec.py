@@ -89,7 +89,7 @@ class Game(object):
 			if guess < code:
 				print "BZZZZZZZZZDT! That's too low, try a higher number."
 			guesses += 1
-			guess = raw_input("[keypad]> ")
+			guess = int(raw_input("[keypad]> "))
 				
 			if guess == code or guess == cheat_code:
 				print "The container clicks open and the seal breaks, letting gas out."

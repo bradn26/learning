@@ -19,6 +19,6 @@ while True:
 	
 	if not state: break
 	
-	# this line is the most importand eve! study!
+	# this line is the most importand ever! study!
 	city_found = cities['_find'](cities, state)
 	print city_found
